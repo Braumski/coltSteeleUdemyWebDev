@@ -40,10 +40,7 @@ function sumArray(arrayInput){
 // I realized this and moved the return statement to the outside of the loop,
 // So that the return would only happen once the entire arrays length had been iterated.
 
-// But with this change I still had a problem. "Let" variables are block scoped, meaning
-// that variable will only apply within the curly brackets or "block". From the perspective
-// of the return statement now, "sum" has not been defined yet, because it is in a different
-// set of brackets.
+// Then I realized that I hade defined sum after calling it.
 
 function sumArray(arrayInput){
     for (let i = 0; i < arrayInput.length; i++) {
@@ -52,6 +49,7 @@ function sumArray(arrayInput){
     }
     return sum;          //moved
 }
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

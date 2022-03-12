@@ -21,10 +21,13 @@ const cat = {
     }
 }
 cat.meow(); // Blue Steele says MEOWWWW
-// Below, we're putting cat.meow into a variable, making the
+// Below, we're putting cat.meow into a variable
 
-const meow2 = cat.meow;    // This is setting a variable that is calling the cat.meow function
-meow2()  // says MEOWWWWW
+const meow2 = cat.meow();    // This is setting a variable that is calling the cat.meow function
+meow2  // says MEOWWWWW  
+//undesired output
+
+//meow2 is calling a function that uses "this" but since "this" depends on the context in which its called, it doesn't refer tp "Blue Steele"
 
 // The invoking context is being changed between the 2 function calls.
 // One is being called from the original function, and one is being

@@ -70,7 +70,7 @@ repeat('I love you', 5);
 function repeat(msg, numTimes){
     let result = ''
     for(let i = 0; i < numTimes; i++){
-        result += str;
+        result += msg;
     }
 }
 repeat('I love you', 5);
