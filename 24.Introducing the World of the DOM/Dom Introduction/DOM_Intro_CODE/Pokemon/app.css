@@ -5,3 +5,9 @@
 .pokemon img {
     display: block;
 }
+div{
+    display:inline-block;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 6px;
+    margin:2px;
+}
